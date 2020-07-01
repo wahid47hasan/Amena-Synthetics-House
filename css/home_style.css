@@ -80,6 +80,6 @@ main{
 
 @media only screen and (max-width: 450px){
     main{
-        background-color: red;
+        background-color: green;
     }
 }
