@@ -53,11 +53,13 @@ nav a{
     color: black;
     text-align: center;
     text-decoration: none;
+
+    transition: color 0.5s ease;
 }
 
 nav a:hover{
     background-color: #a30214;
-    opacity: 0.5;
+    color: #f2f2f0;
 }
 
 #language_change{
