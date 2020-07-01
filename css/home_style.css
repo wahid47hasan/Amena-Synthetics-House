@@ -74,6 +74,10 @@ section p{
     background-color: #808fa6;
 }
 
+main{
+        background-color: red;
+}  
+
 @media only screen and (max-width: 450px){
     main{
         background-color: red;
