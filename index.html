@@ -2,52 +2,65 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-wdith, initial-scale=1">
         <title>Amena Synthetics House-Home</title>
         <link rel="stylesheet" href="css/common_style.css">
         <link rel="stylesheet" href="css/home_style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <div id="trapezoid">
+            <!-- <div id="trapezoid">
                 <h1>Amena<br>Synthetics<br>House</h1>
-            </div>
+            </div> -->
             <nav>
                 <input type="text" id="search_bar" placeholder="Search here...">
                 <a href="#" id="language_change">Change language to Bengali</a>
                 <a href="signup.html">Sign up</a>
                 <a href="login.html">Login</a>
-                <a href="#">Shop Now</a>
+                <a href="shopnow.html">Shop Now</a>
                 <a href="index.html">Home</a>
             </nav>
         </header>
 
         <main>
-            <section>
-                <p>Welcome.<br>Here we try to give our best service.</p>
-            </section>
-            <div class="slide-show-container">
-                <div class="slide-images fade-transition">
-                    <img src="images/carbin-1.jpg" alt="carbin doormat"/>
-                </div>
-                <div class="slide-images fade-transition">
-                    <img src="images/isaam_doormat.jpg" alt="isaam doormat"/>
-                </div>
-                <div class="slide-images fade-transition">
-                    <img src="images/bushra_doormat.jpg" alt="bushra doormat"/>
-                </div>
-                <div class="slide-images fade-transition">
-                    <img src="images/grass_doormat.jpg" alt="grass doormat"/>
-                </div>
+            <div class="container">
+                <!--For slide show: starts-->
+                <div class="flex-items slide-show-container" id="flex-1">   
+                    <div class="slide-images fade-transition">
+                        <img src="images/carbin-1.jpg" alt="carbin doormat"/>
+                    </div>
+                    <div class="slide-images fade-transition">
+                        <img src="images/isaam_doormat.jpg" alt="isaam doormat"/>
+                    </div>
+                    <div class="slide-images fade-transition">
+                        <img src="images/bushra_doormat.jpg" alt="bushra doormat"/>
+                    </div>
+                    <div class="slide-images fade-transition">
+                        <img src="images/grass_doormat.jpg" alt="grass doormat"/>
+                    </div>
 
-                <br>
-                <div class="dot-div">
-                    <span class="dots"></span>
-                    <span class="dots"></span>
-                    <span class="dots"></span>
-                    <span class="dots"></span>
+                    <br>
+                    <div class="dot-div">
+                        <span class="dots"></span>
+                        <span class="dots"></span>
+                        <span class="dots"></span>
+                        <span class="dots"></span>
+                    </div>
+                </div> 
+                <!--For slide show: ends-->
+                <section class="flex-items" id="flex-2">
+                    <div>
+                        <p>Welcome.<br>Here we try to give our best service.</p>
+                    </div>
+                </section>
+            </div>
+
+            <!--Advetisement section-->
+            <div class="ad-section">
+                <div>
+                    This is Advertisement Section
                 </div>
-            </div> 
+            </div>
         </main>
 
         <footer>
