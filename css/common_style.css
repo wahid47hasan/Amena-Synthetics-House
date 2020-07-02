@@ -46,7 +46,7 @@ nav{
 }
 
 nav a{
-    display: block;
+    display: inline-block;
     float: right;
 
     padding: 25px 10px;
@@ -148,4 +148,39 @@ footer hr{
 }
 
 /* =====================footer portion ends=================== */
+
+
+/* ===========media queries for header and footer============== */
+@media only screen and (max-width: 480px){
+    /* ====for header==== */
+    nav{
+        text-align: center;
+    }
+    nav a{
+        display: block;
+        float: none;
+    }
+    #search_bar{
+        width: 85%;
+        display: block;
+        float: none;
+    }
+    #language_change{
+        position: static;
+        width: 100%;
+        line-height: 50px;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    /* ====for footer==== */
+    .supports{
+        display: block;
+    }
+    .account{
+        display: block;
+        margin-left: 5%;
+    }
+}
 
