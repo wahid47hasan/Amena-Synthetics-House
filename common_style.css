@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =====================header portion starts=================== */
+/*for the icon*/
+#trapezoid{
+    position: absolute;
+    top: 60px;
+    left: 5px;
+    border-top: 100px solid #39bd37;
+    /* border-left: 25px solid transparent;
+    border-right: 25px solid transparent; */
+    width: 180px;
+}
+#trapezoid:before {
+    position: relative;
+    top: -170px;
+    content: ""; /*content na thaakle draw hobe na. so ekta empty content dite hobe*/
+    border-bottom: 50px solid #e8c900;
+    border-right: 90px solid transparent;
+    border-left: 90px solid transparent;
+
+  }
+
+header h1{
+    position: relative;
+    top: -125px;
+    left: 5px;
+    display: inline-block;
+    font-variant: small-caps;
+    text-align: center;
+    color: #e3e3e3;
+}
+
+nav{
+    width: 100%;
+    display: block;
+    background-color: #d90019;
+    overflow: hidden;
+}
+
+nav a{
+    display: block;
+    float: right;
+
+    padding: 25px 10px;
+
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+    transition: color 0.5s ease;
+}
+
+nav a:hover{
+    background-color: #a30214;
+    color: #f2f2f0;
+}
+
+#language_change{
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    padding: 0 10px;
+
+    color: #d6d6d6;
+}
+
+#language_change:hover{
+    color: #001f63;
+    background: none;
+    opacity: 1;
+}
+
+#search_bar{
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20%;
+    border: none;
+    float: right;
+}
+/* =====================header portion starts=================== */
+
+/* =====================footer portion starts=================== */
+footer{
+    clear: both;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to top, #100630, #010136);
+    color: #98989c;
+    /* background-image: linear-gradient(to right, red , yellow); */
+}
+
+.supports{
+    width: 20%;
+    height: auto;
+    margin: 2% 0;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+.supports h3{
+    font-size: 150%;
+}
+
+.account{
+    width: 20%;
+    height: auto;
+    margin: 2% 0;
+    margin-right: 5%;
+    display: inline-block;
+    text-align: left;
+}
+.account h3{
+    font-size: 150%;
+}
+
+footer a{
+    font-size: 90%;
+    text-decoration: none;
+    display: block;
+    color: #98989c;
+}
+
+footer a:hover{
+    color: #ededed;
+}
+
+footer hr{
+    margin-bottom: 5%;
+}
+
+#copyright{
+    clear: both;
+    margin: 0 5%;
+}
+
+/* =====================footer portion ends=================== */
+
