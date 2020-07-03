@@ -6,13 +6,18 @@
         <title>Amena Synthetics House-Home</title>
         <link rel="stylesheet" href="css/common_style.css">
     </head>
-    <body>
+    <body onresize="CollapseButtonDeactive()">
         <!--Header section-->
         <header>
             <!-- <div id="trapezoid">
                 <h1>Amena<br>Synthetics<br>House</h1>
             </div> -->
-            <nav>
+            <div class="collapse-able-bar">
+                <div id="collapse-able-icon" onclick="collapseButtonActive()">
+                    &#9776; <!--this is collapse able menu icon-->
+                </div>
+            </div>
+            <nav id="navbar">
                 <input type="text" id="search_bar" placeholder="Search here...">
                 <a href="#" id="language_change">Change language to Bengali</a>
                 <a href="signup.html">Sign up</a>
@@ -51,5 +56,9 @@
                 <p>&copy; Amena Synthetics House, 2020</p>
             </div>
         </footer>
+
+
+        <!--JS query-->
+        <script src="js/CollapseMenu.js"></script>
     </body>
 </html>
