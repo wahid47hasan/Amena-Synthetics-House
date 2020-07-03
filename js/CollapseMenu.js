@@ -15,3 +15,18 @@ function collapseButtonActive(){
         isMenuOpen = true;
     }
 }
+
+function CollapseButtonDeactive(){
+    var windowWidth = window.outerWidth;
+    var navBar = document.getElementById("navbar");
+    var icon = document.getElementById("collapse-able-icon");
+    if(windowWidth > 480){
+        navBar.style.display = "block";
+        isMenuOpen = false;
+    }
+    else{
+        navBar.style.display = "none";
+        icon.innerHTML = "&#9776";
+        isMenuOpen = false;
+    }
+}
