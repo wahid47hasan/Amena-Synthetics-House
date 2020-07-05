@@ -46,7 +46,7 @@ nav{
 }
 
 nav a{
-    display: block;
+    display: inline-block;
     float: right;
 
     padding: 25px 10px;
@@ -88,6 +88,36 @@ nav a:hover{
     border: none;
     float: right;
 }
+
+/* collapse-able menu */
+.collapse-able-bar{
+    display: none;
+    position: relative;
+    background-color: #d90019;
+    color: #e0e0e0;
+    width: 100%;
+    height: 50px;
+    font-size: 210%;
+}
+#collapse-able-icon{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#collapse-able-icon:hover{
+    background-color: #d4d4d4;
+    color: black;
+    opacity: 0.5;
+    border-radius: 3px;
+}
+
+
+
 /* =====================header portion starts=================== */
 
 /* =====================footer portion starts=================== */
@@ -148,4 +178,49 @@ footer hr{
 }
 
 /* =====================footer portion ends=================== */
+
+
+/* ===========media queries for header and footer============== */
+@media only screen and (max-width: 480px){
+    /* ====for header==== */
+    nav{
+        text-align: center;
+    }
+    nav a{
+        display: block;
+        float: none;
+    }
+    #search_bar{
+        width: 85%;
+        display: block;
+        float: none;
+    }
+    #language_change{
+        position: static;
+        width: 100%;
+        line-height: 50px;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+
+    /* ====for footer==== */
+    .supports{
+        display: block;
+    }
+    .account{
+        display: block;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    nav{
+        display: none;
+    }
+
+    .collapse-able-bar{
+        display: block;
+    }
+}
 

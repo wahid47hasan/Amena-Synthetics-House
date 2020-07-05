@@ -2,3 +2,110 @@
     width: 100%;
     height: 500px;
 }
+
+#login{
+    background-color: #23193b;
+    color: #ffffff;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5px;
+    /* line-height: 50px; */
+}
+
+#login h2{
+    position: relative;
+    top: 15%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    margin-top: 20px;
+    font-variant-caps: all-petite-caps;
+    font-size: 2rem;
+}
+
+#login hr{
+    width: 50%;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    -webkit-transform: translate(-50%,50%);
+    -ms-transform: translate(-50%,50%);
+    -o-transform: translate(-50%,50%);
+    margin: 0;
+    padding: 0;
+    color: #00ff33;
+}
+
+
+#login input[type="text"],#login input[type="password"]{
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    -o-transform: translateY(-30%);
+    margin: 5px;
+    padding: 10px;
+    background: transparent;
+    border-width: 3px;
+    border-radius: 20px;
+    color: #ffffff;
+    border-color: #af7aff;
+    font-size: 1rem;
+    transition: border 0.5s ease-out;
+}
+
+#login input[type="text"]:hover,#login input[type="password"]:hover{
+    /* width: 270px; */
+    border-color: #00b3ff;
+    border-radius: 10px;
+}
+
+#login input[type="text"]:focus,#login input[type="password"]:focus{
+    border-color: #00ff33;
+    border-radius: 10px;
+}
+
+#login-button{
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+    margin: 15px;
+    padding: 5px 15px;
+    background-image: linear-gradient(to right,#00ff33, #73ff00);
+    background-image: -webkit-linear-gradient(to right,#00ff33, #73ff00);
+    background-image: -o-linear-gradient(to right,#00ff33, #73ff00);
+    border-width: 3px;
+    border-radius: 15px;
+    color: #ffffff;
+    border-color: #00de2c;
+    font-size: 1.2rem;
+    transition: background-image 1.2s linear;
+}
+
+#login-button:hover{
+    width: 100px;
+    background-image: linear-gradient(to right, #73ff00, #00ff33);
+    background-image: -webkit-linear-gradient(to right,#00ff33, #73ff00);
+    background-image: -o-linear-gradient(to right,#00ff33, #73ff00);
+}
+
+#login-button:active{
+    width: 100px;
+    background-image: linear-gradient(to right,  #ff3721, #a30010);
+    background-image: -webkit-linear-gradient(to right,  #ff3721, #a30010);
+    background-image: -o-linear-gradient(to right,  #ff3721, #a30010);
+    border-color: #a81100;
+}
+
+

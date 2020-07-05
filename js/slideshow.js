@@ -28,3 +28,9 @@ function slide_show(){
 
     setTimeout(slide_show, 2000); // durtion 2 secs
 }
+
+function OnDotPressed(dotIndex){
+    console.log("Dot Pressed");
+    dotClicked = true;
+    image_index = dotIndex;
+}
