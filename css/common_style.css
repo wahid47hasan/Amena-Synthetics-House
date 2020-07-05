@@ -116,9 +116,13 @@ nav a:hover{
     border-radius: 3px;
 }
 
+.active{
+    background-color: #ff172e;
+    color: #f2f2f0;
+}
 
 
-/* =====================header portion starts=================== */
+/* =====================header portion ends=================== */
 
 /* =====================footer portion starts=================== */
 footer{

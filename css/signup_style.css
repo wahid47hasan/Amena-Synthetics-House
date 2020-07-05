@@ -1,14 +1,14 @@
 .signup-form{
     width: 100%;
     height: 500px;
-    margin: 50px 0;
+    margin: 100px 0;
 }
 
 #signup{
     background-color: #23193b;
     color: #ffffff;
     width: 400px;
-    height: 550px;
+    height: 600px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -21,12 +21,13 @@
 }
 
 #signup h2{
-    position: relative;
-    top: 15%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    -webkit-transform: translate(-50%, -5%);
+    -ms-transform: translate(-50%, -5%);
+    -o-transform: translate(-50%, -5%);
     margin-top: 20px;
     font-variant-caps: all-petite-caps;
     font-size: 2rem;
@@ -34,23 +35,20 @@
 
 #signup hr{
     width: 50%;
-    position: relative;
-    top: 10%;
+    position: absolute;
+    top: 15%;
     left: 50%;
-    transform: translate(-50%,50%);
-    -webkit-transform: translate(-50%,50%);
-    -ms-transform: translate(-50%,50%);
-    -o-transform: translate(-50%,50%);
+    transform: translate(-50%, -10%);
+    -webkit-transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -10%);
+    -o-transform: translate(-50%, -10%);
     margin: 0;
     padding: 0;
     color: #00ff33;
 }
 
-#signup input{
+#signup input[type="text"],#signup input[type="password"],#signup input[type="number"]{
     width: 80%;
-    position: relative;
-    top: 30%;
-    transform: translateY(-30%);
     margin: 5px;
     padding: 10px;
     background: transparent;
@@ -62,6 +60,94 @@
     transition: border 0.5s ease-out;
 }
 
-#signup input[type="radio"]{
-    position: relative;
+#signup input[name="username"]{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+#signup input[name="password"]{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+#signup input[name="number"]{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+#signup input[name="address"]{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+#signup input[type="text"]:hover,#signup input[type="password"]:hover,#signup input[type="number"]:hover{
+    /* width: 270px; */
+    border-color: #00b3ff;
+    border-radius: 10px;
+}
+
+#signup input[type="text"]:focus,#signup input[type="password"]:focus,#signup input[type="number"]:hover{
+    border-color: #00ff33;
+    border-radius: 10px;
+}
+
+
+#gender{
+    text-align: left;
+    position: absolute;
+    top: 75%;
+    left: 30px;
+    transform: translateY(-75%);
+    font-size: 1rem;
+}
+
+#gender label{
+    color: #af7aff;
+}
+
+/* #gender input[type="radio"]{
+    background-color: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-color: chartreuse;
+
+} */
+
+#submit-button{
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    transform: translate(-45%, -5%);
+    margin: 15px;
+    padding: 5px 15px;
+    background-image: linear-gradient(to right,#00ff33, #73ff00);
+    background-image: -webkit-linear-gradient(to right,#00ff33, #73ff00);
+    background-image: -o-linear-gradient(to right,#00ff33, #73ff00);
+    border-width: 3px;
+    border-radius: 15px;
+    color: #ffffff;
+    border-color: #00de2c;
+    font-size: 1.2rem;
+    transition: background-image 1.2s linear;
+}
+
+#submit-button:hover{
+    width: 120px;
+    background-image: linear-gradient(to right, #73ff00, #00ff33);
+    background-image: -webkit-linear-gradient(to right,#00ff33, #73ff00);
+    background-image: -o-linear-gradient(to right,#00ff33, #73ff00);
+}
+
+#submit-button:active{
+    width: 100px;
+    background-image: linear-gradient(to right,  #ff3721, #a30010);
+    background-image: -webkit-linear-gradient(to right,  #ff3721, #a30010);
+    background-image: -o-linear-gradient(to right,  #ff3721, #a30010);
+    border-color: #a81100;
 }

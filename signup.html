@@ -20,7 +20,7 @@
             <nav id="navbar">
                 <input type="text" id="search_bar" placeholder="Search here...">
                 <a href="#" id="language_change">Change language to Bengali</a>
-                <a href="signup.html">Sign up</a>
+                <a href="signup.html" class="active">Sign up</a>
                 <a href="login.html">Login</a>
                 <a href="shopnow.html">Shop Now</a>
                 <a href="index.html">Home</a> 
@@ -32,24 +32,25 @@
                 <form action="" id="signup">
                     <h2>Sign up</h2>
                     <hr>
-                    <input type="text" placeholder="username">
+                    <input name="username" type="text" placeholder="username">
                     <br>
-                    <input type="password" placeholder="password">
+                    <input name="password" type="password" placeholder="password">
                     <br>
-                    <input type="number" placeholder="mobile number">
+                    <input name="number" type="number" placeholder="mobile number">
                     <br>
-                    <input type="text" placeholder="address">
+                    <input name="address" type="text" placeholder="address">
                     <br>
-                    <input type="radio" name="gender" value="male">
-                    <label for="gender">Male</label>
+
+                    <div id="gender">
+                    <label for="gender"><input type="radio" name="gender" value="male">Male</label>
                     <br>
-                    <input type="radio" name="gender" value="female">
-                    <label for="gender">Female</label>
+                    <label for="gender"><input type="radio" name="gender" value="female">Female</label>
                     <br>
-                    <input type="radio" name="gender" value="others">
-                    <label for="gender">Others</label>
+                    <label for="gender"><input type="radio" name="gender" value="others">Others</label>
+                    </div>
+
                     <br>
-                    <input type="submit" value="Sign up">
+                    <input id="submit-button" type="submit" value="Sign up">
                 </form>
             </div>
         </main>

@@ -38,7 +38,7 @@
     position: absolute;
     top: 20%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -10%);
     -webkit-transform: translate(-50%, -10%);
     -ms-transform: translate(-50%, -10%);
     -o-transform: translate(-50%, -10%);
