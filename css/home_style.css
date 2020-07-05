@@ -81,6 +81,25 @@
     text-align: center;
 }
 
+/*fade transition*/
+.fade-transition{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .5}
+    to{opacity: 1}
+}
+
+@keyframes fade{
+    from{opacity: .5}
+    to{opacity: 1}
+}
+
+
 /* =========media queries========== */
 @media only screen and (max-width: 480px){
     .container{
@@ -143,22 +162,7 @@ section p{
     border: 2px solid black; /*temporary*/
 /*}
 
-.fade-transition{
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade{
-    from{opacity: .5}
-    to{opacity: 1}
-}
-
-@keyframes fade{
-    from{opacity: .5}
-    to{opacity: 1}
-}
 
 .dot-div{
     text-align: center;
