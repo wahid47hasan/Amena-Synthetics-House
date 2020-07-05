@@ -7,26 +7,27 @@
     background-color: #23193b;
     color: #ffffff;
     width: 350px;
-    height: 300px;
+    height: 400px;
     position: relative;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    /* text-align: center; */
     border-radius: 5px;
     /* line-height: 50px; */
 }
 
 #login h2{
-    position: relative;
-    top: 15%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    -webkit-transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -10%);
+    -o-transform: translate(-50%, -10%);
     margin-top: 20px;
     font-variant-caps: all-petite-caps;
     font-size: 2rem;
@@ -34,26 +35,28 @@
 
 #login hr{
     width: 50%;
-    position: relative;
-    top: 10%;
+    position: absolute;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%,50%);
-    -webkit-transform: translate(-50%,50%);
-    -ms-transform: translate(-50%,50%);
-    -o-transform: translate(-50%,50%);
+    transform: translate(-50%, -20%);
+    -webkit-transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -10%);
+    -o-transform: translate(-50%, -10%);
     margin: 0;
     padding: 0;
     color: #00ff33;
+    background-color: #00ff33;
 }
 
 
-#login input[type="text"],#login input[type="password"]{
-    position: relative;
-    top: 30%;
-    transform: translateY(-30%);
-    -webkit-transform: translateY(-30%);
-    -ms-transform: translateY(-30%);
-    -o-transform: translateY(-30%);
+#login input[type="text"]{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    -webkit-transform: translate(-50%, -35%);
+    -ms-transform: translate(-50%, -35%);
+    -o-transform: translate(-50%, -35%);
     margin: 5px;
     padding: 10px;
     background: transparent;
@@ -63,6 +66,27 @@
     border-color: #af7aff;
     font-size: 1rem;
     transition: border 0.5s ease-out;
+    z-index: 100;
+}
+
+#login input[type="password"]{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    margin: 5px;
+    padding: 10px;
+    background: transparent;
+    border-width: 3px;
+    border-radius: 20px;
+    color: #ffffff;
+    border-color: #af7aff;
+    font-size: 1rem;
+    transition: border 0.5s ease-out;
+    z-index: 100;
 }
 
 #login input[type="text"]:hover,#login input[type="password"]:hover{
@@ -77,9 +101,13 @@
 }
 
 #login-button{
-    position: relative;
-    top: 30%;
-    transform: translateY(-30%);
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-45%, -70%);
+    -webkit-transform: translate(-45%, -70%);
+    -ms-transform: translate(-45%, -70%);
+    -o-transform: translate(-45%, -70%);
     margin: 15px;
     padding: 5px 15px;
     background-image: linear-gradient(to right,#00ff33, #73ff00);
